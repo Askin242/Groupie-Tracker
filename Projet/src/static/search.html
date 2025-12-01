@@ -1,0 +1,80 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Groupie Tracker - Search</title>
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/search.css">
+    </head>
+    <body>
+        <section class="header">
+            <h1>Groupie Tracker</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/search.html">Search</a></li>
+                    <li><a href="/aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </section>
+        <main class="search-page">
+            <section class="search-panel">
+                <div class="search-bar">
+                    <label for="globalSearch">Search artists & groups</label>
+                    <div class="input-wrapper">
+                        <input id="globalSearch" type="text" placeholder="Type a name, city, album..." autocomplete="off">
+                    </div>
+                    <ul id="suggestions" class="suggestions" aria-live="polite"></ul>
+                </div>
+                <div class="filter-box">
+                    <div class="filter-header">
+                        <h2>Filters</h2>
+                        <p>Instant client-side filtering (case insensitive).</p>
+                    </div>
+                    <form id="filterForm">
+                        <label>
+                            Name
+                            <input type="text" name="name" placeholder="e.g. moonlight riders">
+                        </label>
+                        <label>
+                            Members
+                            <div class="wrapper">
+                                <div class="values">
+                                  <span id="range1">
+                                    1
+                                  </span>
+                                  <span> &dash; </span>
+                                  <span id="range2">
+                                    10
+                                  </span>
+                                </div>
+                                <div class="container">
+                                  <div class="slider-track"></div>
+                                  <input type="range" min="1" max="10" value="1" id="slider-1" oninput="slideOne()">
+                                  <input type="range" min="1" max="10" value="10" id="slider-2" oninput="slideTwo()">
+                                </div>
+                              </div>
+                        </label>
+                        <label>
+                            Location
+                            <input type="text" name="location" placeholder="city or country">
+                        </label>
+                        <label>
+                            First album
+                            <input type="text" name="firstAlbum" placeholder="album title">
+                        </label>
+                        <label>
+                            Creation date
+                            <input type="number" name="creationDate" min="1950" max="2025" placeholder="year">
+                        </label>
+                        <button type="reset" class="ghost">Clear filters</button>
+                    </form>
+                </div>
+            </section>
+            <section class="results" id="results">
+                <p class="empty-state">Start typing or use the filters to discover groups.</p>
+            </section>
+        </main>
+        <script src="./js/search.js"></script>
+    </body>
+</html>
