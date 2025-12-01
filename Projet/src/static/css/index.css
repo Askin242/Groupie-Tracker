@@ -364,3 +364,22 @@ h1 {
 .artist-data-loading::before, .artist-data-error::before {
     display: none;
 }
+
+.refresh-button {
+    border: none;
+    border-radius: 0.8rem;
+    padding: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background: #1d4ed8;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-left:auto;
+    margin-right: 0;
+    display:block;
+    
+}
+
+.refresh-button:hover {
+    opacity: 0.9;
+}
