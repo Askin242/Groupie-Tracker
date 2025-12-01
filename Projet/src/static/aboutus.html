@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Groopie Tracker - About Us</title>
+        <title>Groupie Tracker - About Us</title>
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/aboutus.css">
     </head>
     <body>
         <section class="header">
-            <h1>Groopie Tracker</h1>
+            <h1>Groupie Tracker</h1>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -21,7 +21,7 @@
         <section class="content">
             <div class="about-card">
                 <p class="eyebrow">Quick look</p>
-                <h2>Groopie Tracker in a nutshell</h2>
+                <h2>Groupie Tracker in a nutshell</h2>
                 <p>We turn tour schedules into clean maps and instant alerts so fans, crews, and partners always know the next stop.</p>
                 <ul class="pill-list">
                     <li>Real-time city timelines</li>
@@ -36,18 +36,18 @@
             <div class="contact-card">
                 <p class="eyebrow">Contact</p>
                 <h3>Say hello</h3>
-                <form class="contact-form">
+                <form class="contact-form" action="mailto:matthieu.rey@ynov.com" method="post" enctype="text/plain">
                     <label>
                         Name
-                        <input type="text" placeholder="Your name" required>
+                        <input type="text" name="name" placeholder="Your name" required>
                     </label>
                     <label>
                         Email
-                        <input type="email" placeholder="you@email.com" required>
+                        <input type="email" name="email" placeholder="you@email.com" required>
                     </label>
                     <label>
                         Message
-                        <textarea rows="3" placeholder="Let's talk tours..." required></textarea>
+                        <textarea name="message" rows="3" placeholder="Let's talk tours..." required></textarea>
                     </label>
                     <button type="submit">Send</button>
                 </form>
